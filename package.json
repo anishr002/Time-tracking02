@@ -1,11 +1,24 @@
 {
   "name": "time-tracking",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anish Rana",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishr002/Time-tracking02.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/anishr002/Time-tracking02/issues"
+  },
+  "homepage": "https://github.com/anishr002/Time-tracking02#readme",
+  "description": ""
 }
