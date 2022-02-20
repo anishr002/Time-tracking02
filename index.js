@@ -60,36 +60,36 @@ app.put('/projects',projectcontroller.updateProject)
 
 //project-team
 app.post('/projectteams',projectteamcontroller.addProjectTeam)
-app.get('./projectteams',projectteamcontroller.getAllProjectTeams)
-app.delete('./projectteams/:projectteamId',projectteamcontroller.deleteProjectTeam)
-app.put('./projectteams',projectteamcontroller.updateProjectteam)
+app.get('/projectteams',projectteamcontroller.getAllProjectTeams)
+app.delete('/projectteams/:projectteamId',projectteamcontroller.deleteProjectTeam)
+app.put('/projectteams',projectteamcontroller.updateProjectteam)
 
 //project module
-app.post('./projectmodules',projectmodulecontroller.addProjectModule)
-app.get('./projectmodules',projectmodulecontroller.getAllProjectModules)
-app.delete('./projectmodules/:projectModuleId',projectmodulecontroller.deleteProjectModule)
-app.put('./projectmodules',projectmodulecontroller.updateProjectmodule)
+app.post('/projectmodules',projectmodulecontroller.addProjectModule)
+app.get('/projectmodules',projectmodulecontroller.getAllProjectModules)
+app.delete('/projectmodules/:projectModuleId',projectmodulecontroller.deleteProjectModule)
+app.put('/projectmodules',projectmodulecontroller.updateProjectmodule)
 
 
 //status
 
-app.post('./status',statuscontroller.addStatus)
-app.get('./status',statuscontroller.getAllStatus)
-app.delete('./status/:statusId',statuscontroller.deleteStatus)
-app.put('./status',statuscontroller.updateStatus)
+app.post('/status',statuscontroller.addStatus)
+app.get('/status',statuscontroller.getAllStatus)
+app.delete('/status/:statusId',statuscontroller.deleteStatus)
+app.put('/status',statuscontroller.updateStatus)
 
 //task
 
-app.post('./tasks',taskcontroller.addTask)
-app.get('./tasks',taskcontroller.getAllTask)
-app.delete('./tasks/:taskId',taskcontroller.deleteTask)
-app.put('./tasks',taskcontroller.updateTask)
+app.post('/tasks',taskcontroller.addTask)
+app.get('/tasks',taskcontroller.getAllTask)
+app.delete('/tasks/:taskId',taskcontroller.deleteTask)
+app.put('/tasks',taskcontroller.updateTask)
 
 //user task
-app.post('./usertasks',usertaskcontroller.addUserTask)
-app.get('./usertasks',usertaskcontroller.getAllUsertask)
-app.delete('./usertasks/:usertaskId',usertaskcontroller.deleteUsertask)
-app.put('./usertasks',usertaskcontroller.updateUsertask)
+app.post('/usertasks',usertaskcontroller.addUserTask)
+app.get('/usertasks',usertaskcontroller.getAllUsertask)
+app.delete('/usertasks/:usertaskId',usertaskcontroller.deleteUsertask)
+app.put('/usertasks',usertaskcontroller.updateUsertask)
 
 //server
 app.listen(3000,function(){
