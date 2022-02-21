@@ -51,6 +51,7 @@ app.post('/users',userconroller.addUser)
 app.get('/users',userconroller.getAllUsers)
 app.delete('/users/:userId',userconroller.deleteUser)
 app.put('/users',userconroller.updateUser)
+app.post("/login",userconroller.login)
 
 //project
 app.post('/projects',projectcontroller.addProject)
