@@ -60,7 +60,7 @@ module.exports.updateProjectmodule = function(req,res){
     let project = req.body.project
     
 
-    ProjectModuleModel.updateOne({_id:projectModuleId},{moduleName:moduleName},{discription:discription},{project:project},function(err,data){
+    ProjectModuleModel.updateOne({_id:projectModuleId},{moduleName:moduleName,discription:discription,project:project},function(err,data){
         if(err){
             res.json({msg:"smw",status:-1,data:err})
         }else{

@@ -55,7 +55,7 @@ module.exports.updateUsertask = function(req,res){
     let task = req.body.task
     
 
-    UserTaskModel.updateOne({_id:usertaskId},{user:user},{task:task},function(err,data){
+    UserTaskModel.updateOne({_id:usertaskId},{user:user,task:task},function(err,data){
         if(err){
             res.json({msg:"smw",status:-1,data:err})
         }else{

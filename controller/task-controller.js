@@ -72,7 +72,7 @@ module.exports.updateTask = function(req,res){
     let status=req.body.status
     let totalminutes = req.body.status
 
-    TaskModel.updateOne({_id:taskId},{module:module},{project:project},{title:title},{discription:discription},{priority:priority},{status:status},{totalminutes:totalminutes},function(err,data){
+    TaskModel.updateOne({_id:taskId},{module:module,project:project,title:title,discription:discription,priority:priority,status:status,totalminutes:totalminutes},function(err,data){
         if(err){
             res.json({msg:"smw",status:-1,data:err})
         }else{

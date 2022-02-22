@@ -65,7 +65,7 @@ module.exports.updateProject = function(req,res){
     let startdate = req.body.startdate
     let completiondate=req.body.completiondate
 
-    ProjectModel.updateOne({_id:projectId},{title:title},{discription:discription},{technology:technology},{estimatehours:estimatehours},{startdate:startdate},{completiondate:completiondate},function(err,data){
+    ProjectModel.updateOne({_id:projectId},{title:title,discription:discription,technology:technology,estimatehours:estimatehours,startdate:startdate,completiondate:completiondate},function(err,data){
         if(err){
             res.json({msg:"smw",status:-1,data:err})
         }else{

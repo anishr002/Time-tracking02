@@ -65,7 +65,7 @@ module.exports.updateUser = function(req,res){
     let password = req.body.password
     let role = req.body.role
 
-    UserModel.updateOne({_id:userId},{firstName:firstName},{email:email},{password:password},{role:role},function(err,data){
+    UserModel.updateOne({_id:userId},{firstName:firstName,email:email,password:password,role:role},function(err,data){
         if(err){
             res.json({msg:"smw",status:-1,data:err})
         }else{

@@ -55,7 +55,7 @@ module.exports.updateProjectteam = function(req,res){
     let user = req.body.user
     
 
-    UserModel.updateOne({_id:projectteamId},{project:project},{user:user},function(err,data){
+    UserModel.updateOne({_id:projectteamId},{project:project,user:user},function(err,data){
         if(err){
             res.json({msg:"smw",status:-1,data:err})
         }else{
